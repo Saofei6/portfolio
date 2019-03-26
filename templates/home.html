@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+{% for each in gallery.all %}
+{{ each.description }}
+<img src="{{ each.image.url }}">
+{% endfor %}
+
+</body>
+</html>
