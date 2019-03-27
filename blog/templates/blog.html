@@ -86,7 +86,7 @@
   </section>
     <div class="container">
         {% for each in blog.all %}
-            <a href=""><h1>{{ each.title }}</h1></a>
+            <a href={{ each.id }}><h1>{{ each.title }}</h1></a>
         <br>
         {{ each.date }}
         <br>
